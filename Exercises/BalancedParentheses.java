@@ -22,6 +22,7 @@ public class BalancedParentheses {
             }
         }
 
+        
 
         return stack.isEmpty();
     }
@@ -29,9 +30,9 @@ public class BalancedParentheses {
     public static void main(String [] args) {
 
         String parentheses1 = "((()))";
-        String parentheses2 = "()()";
-        String parentheses3 = "(";
-        String parentheses4 = ")";
+        String parentheses2 = "(()())";
+        String parentheses3 = "(()";
+        String parentheses4 = "())";
 
         System.out.println(isBalanced(parentheses1));
         System.out.println(isBalanced(parentheses2));
