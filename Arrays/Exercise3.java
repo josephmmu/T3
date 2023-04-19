@@ -21,6 +21,7 @@ public class Exercise3 {
 
         // prints out sum
         System.out.println("Total Sum: " + sum);
+        input.close();
 
     }
 

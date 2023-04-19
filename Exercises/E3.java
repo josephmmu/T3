@@ -22,9 +22,8 @@ public class E3 {
             
         }
 
-
         System.out.println("The sum of the array's values is : " + sum);
-
+        input.close();
     }
     
 }

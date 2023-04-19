@@ -22,7 +22,9 @@ public class Exercise1 {
             System.out.print("Welcome to the Queue (Join, Order, Leave): ");
             String process = input.nextLine();
 
+            // Switch statement for the program menu
             switch(process) {
+                // Allows the user to join the queue, and also provide a name
                 case "Join":
                     System.out.print("Enter your name: ");
                     
@@ -30,9 +32,9 @@ public class Exercise1 {
                     line.add(name);
 
                     System.out.println(name + " has joined the line.");
-
                     break;
 
+                    // removes the head of the queue 
                 case "Order":
                     if (line.isEmpty()) {
                         System.out.println("Queue is empty, no on is in the line.");
@@ -42,6 +44,7 @@ public class Exercise1 {
                     }
                     break;
 
+                // Exists the program
                 case "Leave":
                     System.out.println("Exiting the queue.");
                     menu = true;
@@ -53,6 +56,7 @@ public class Exercise1 {
             }
         } while (!menu);
 
+        input.close();
 
     }
     

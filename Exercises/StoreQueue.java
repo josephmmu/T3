@@ -48,6 +48,7 @@ public class StoreQueue {
             }
 
         }
+        input.close();
 
     }
     
